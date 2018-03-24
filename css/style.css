@@ -106,6 +106,7 @@ h3{
 }
 
 #carousel a {
+    position: absolute;
     display: block;
     height: 300px;
 }
@@ -120,7 +121,7 @@ h3{
 }
 
 .slide {
-    transition: opacity 1s ease-in-out;
+    transition: visibility 1.2s, opacity 1s ease-in-out;
 }
 
 .carousel-caption {
@@ -133,6 +134,7 @@ h3{
 }
 
 .carousel-caption a {
+    position: relative !important;
     font-size: 18pt;
     font-weight: 700;
     height: auto !important;
@@ -228,4 +230,44 @@ article{
 #right-column{
     float: left;
     width: 280px;
+}
+
+/* Redo this */
+
+.pagination {
+    margin-left: 180px;
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    height: 50px;
+}
+.pagination a {
+    color: rgb(225, 188, 188);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+footer {
+    width:100%;
+    padding: 28px 0 15px 0;
+    background:rgb(16, 16, 16);
+    color:rgb(172, 172, 172);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer #menu{
+    width: 1000px;
+    margin: 0px auto;
+}
+
+footer #menu-items li a{
+    font-size: 12pt;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    color: rgb(242, 49, 100); 
+    padding: 0 10px 0 10px;
+    transition: all 0.4s;   
 }
