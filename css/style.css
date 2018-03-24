@@ -9,7 +9,7 @@ body{
     font-family: 'Ubuntu Mono', monospace;
     background: black;
     color: white;
-    /* background: url('../img/bg.jpg') center center no-repeat; */
+    background: url('../img/bg.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -34,7 +34,7 @@ li{
 
 header{
     height: auto;
-    /* text-align: center; */
+    text-align: center;
 }
 
 p{
@@ -64,8 +64,6 @@ h3{
 #navbar{
     background: rgb(41, 41, 41);
     width: 100%;
-    /* width: 1000px; */
-    /* margin: 0px auto; */
 }
 
 #menu{
@@ -77,7 +75,7 @@ h3{
     display: inline-block;
     color: #f50056; 
     padding: 11px 30px 11px 5px;
-    /* padding: 11px 15px; */
+    padding: 11px 15px;
     transition: all 0.4s;   
 }
 
@@ -90,10 +88,12 @@ h3{
     width: 1000px;
     margin: 0px auto;
     margin-top: 15px;
+    margin-bottom: 25px;
     background: rgb(38, 38, 38);
     border-left: #f50056 2px solid;
     border-right: #f50056 2px solid;
     border-top: #f50056 2px solid;
+    border-bottom: #f50056 2px solid;
 }
 
 #carousel{
@@ -207,8 +207,12 @@ h3{
 
 #left-column{
     float: left;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 15px 10px;
     width: 690px;
+}
+
+#article-list{
+    padding-bottom: 10px;
 }
 
 article{
@@ -234,23 +238,9 @@ article{
 
 /* Redo this */
 
-.pagination {
-    margin-left: 180px;
-    margin-bottom: 30px;
-    padding: 10px 0px;
-    height: 50px;
-}
-.pagination a {
-    color: rgb(225, 188, 188);
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-}
-
 footer {
     width:100%;
-    padding: 28px 0 15px 0;
+    padding: 25px 0 15px 0;
     background:rgb(16, 16, 16);
     color:rgb(172, 172, 172);
     font-family: 'Courier New', Courier, monospace;
