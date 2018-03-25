@@ -14,13 +14,16 @@
 
     <header> 
         <div class="logo">
-            <a href="/"><img src="img/lr-logo.png"></a>
+            <a href="#">
+                <img class="lr" src="img/lr-logo.png">
+                <img class="sm" src="img/sm-logo.png" style="display:none">
+                <span id="menu-btn" toggle="0" style="display:none" onclick="openNav()">&#9776;</span>
+            </a>
         </div>
         <nav id="navbar">
             <div id="menu">
                 <ul id="menu-items">
                     <li><a href="#">>home</a></li>
-                    <li><a href="#">>news</a></li>
                     <li><a href="#">>blog</a></li>
                     <li><a href="#">>about</a></li>
                 </ul>
@@ -90,17 +93,18 @@
                     <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae consequatur.</a>
                 </div>
             </section>
+
             <section id="columns">
-                <div id="left-column">
+                <div id="main-column">
                     <h2>Latest updates</h2>
                     <div id="article-list">
                         <article>
                             <div class="minipic">
                                 <a href="#"><img src="img/sample.jpg"></a>
                             </div>
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                                 <p>Aspernatur vitae consequatur ipsa ipsam earum sunt dolore magnam, tempora iste nostrum exercitationem nisi quia veniam perspiciatis quis, suscipit labore quas voluptas!</p>
-                                <i>by Elizabeth Henges, March 14, 2018</i>
+                                <i>by Elizabeth Henges, March 14, 2018</i>                
                         </article>
                         <article>
                             <div class="minipic">
@@ -179,11 +183,12 @@
                     <a href="#" style="background:#bb2057; color:white; padding:10px 20px; float: right;">Next page</a>
 
                 </div>
-                <div id="right-column"> 
+                <div id="side-column"> 
                     <h2>Newsletter</h2>
                 </div>
             </section>
-            <div class="clearfix"></div>        
+            <div class="clearfix"></div>     
+
         </div>   
     </main>  
 
@@ -197,7 +202,7 @@
             </ul>
         </div> 
         <p>A Useless Endeavor Media website. Powered by my fucking Soul.<br>
-            Copyright &copy; 2018 VA-11 HALL-A Bar. All rights reserved.</p>       
+            Copyright &copy; 2018 VA-11 HALL-A Bar. No rights reserved.</p>       
     </footer>
 
     <script src="./js/script.js"></script>

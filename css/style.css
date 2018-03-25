@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------------------
+Globals
+-----------------------------------------------------------------------------*/
+
 * {
     box-sizing: border-box;
 }
@@ -43,6 +47,9 @@ p{
 
 i{
     font-size: 9pt;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
 }
 
 h2{
@@ -55,8 +62,28 @@ h3{
     margin-bottom: 8px;
 }
 
+.wrapper{    
+    max-width: 1000px;
+    margin: 0px auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: rgb(38, 38, 38);
+    border-left: #f50056 2px solid;
+    border-right: #f50056 2px solid;
+    border-top: #f50056 2px solid;
+    border-bottom: #f50056 2px solid;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/*-----------------------------------------------------------------------------
+Header
+-----------------------------------------------------------------------------*/
+
 .logo{
-    width: 1030px;
+    max-width: 1000px;
     padding: 8px;
     margin: 0px auto;
 }
@@ -67,7 +94,7 @@ h3{
 }
 
 #menu{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0px auto;
 }
 
@@ -84,17 +111,9 @@ h3{
     /* background: #f50056; */
 }
 
-.wrapper{    
-    width: 1000px;
-    margin: 0px auto;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    background: rgb(38, 38, 38);
-    border-left: #f50056 2px solid;
-    border-right: #f50056 2px solid;
-    border-top: #f50056 2px solid;
-    border-bottom: #f50056 2px solid;
-}
+/*-----------------------------------------------------------------------------
+Carousel
+-----------------------------------------------------------------------------*/
 
 #carousel{
     background-position: center;
@@ -111,17 +130,14 @@ h3{
     height: 300px;
 }
 
-#carousel img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 996px;
-    height: 298px;
-    object-fit: cover;
-}
-
 .slide {
     transition: visibility 1.2s, opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 298px;
+    object-fit: cover;
 }
 
 .carousel-caption {
@@ -162,6 +178,10 @@ h3{
     background-color: #f50056;
 }
 
+/*-----------------------------------------------------------------------------
+Features
+-----------------------------------------------------------------------------*/
+
 .feature{
     background-position: center center;
     background-size: cover;
@@ -197,15 +217,15 @@ h3{
     height: auto !important;
 }
 
-.clearfix{
-    clear: both;
-}
+/*-----------------------------------------------------------------------------
+Main column
+-----------------------------------------------------------------------------*/
 
 #columns{
     clear: both;
 }
 
-#left-column{
+#main-column{
     float: left;
     padding: 0px 10px 15px 10px;
     width: 690px;
@@ -231,12 +251,19 @@ article{
     width: 150px;
 }
 
-#right-column{
+
+/*-----------------------------------------------------------------------------
+Side column
+-----------------------------------------------------------------------------*/
+
+#side-column{
     float: left;
     width: 280px;
 }
 
-/* Redo this */
+/*-----------------------------------------------------------------------------
+Footer
+-----------------------------------------------------------------------------*/
 
 footer {
     width:100%;
@@ -246,10 +273,11 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     text-align: center;
+    /* border-top: gray 2px solid; */
 }
 
 footer #menu{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0px auto;
 }
 
@@ -261,3 +289,102 @@ footer #menu-items li a{
     padding: 0 10px 0 10px;
     transition: all 0.4s;   
 }
+
+/*-----------------------------------------------------------------------------
+Responsivensess stuff
+-----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1010px){
+    .wrapper {
+        width: 850px;
+    }
+    #main-column{
+        width: 540px;
+    }
+    #side-column{
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    #main-column{
+        width: 100%;
+    }
+    #side-column{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper {
+        border-top: #f50056 2px solid;
+    }
+    .feature {
+        width: 100%;
+        float: none;
+        border-bottom: 2px solid black;
+    }
+    .carousel-caption {
+        bottom: 0;
+        max-width: 480px;
+    }
+
+    #navbar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper {
+        border-top: #f50056 2px solid;
+    }
+    .feature {
+        width: 100%;
+        float: none;
+        border-bottom: 2px solid black;
+    }
+    .carousel-caption {
+        bottom: 0;
+        max-width: 480px;
+    }
+    #navbar{
+        display: none;
+    }
+    header{
+        text-align: initial;
+    }
+    .lr{
+        display: none;
+    }
+    .sm{
+        display: inline-block !important;
+    }
+    #menu-btn{
+        font-size: 30px;
+        cursor: pointer;
+        float: right;
+        padding-right: 9px;
+        padding-top: 5px;
+        display: block !important;
+    }
+    #navbar{
+        transition: 0.5s;
+        display: block;
+        height: 0px;
+    }
+}
+
+@media (hover: none){
+    .dot:hover {
+        background-color: #ee729db4;
+    }
+    .active{
+        background-color: #f50056 !important;
+    }
+}
+

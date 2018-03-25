@@ -36,3 +36,14 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 7000);
 }
+
+function openNav() {
+    var toggle = document.getElementById("menu-btn").getAttribute('toggle');
+    if(toggle == 0){
+        document.getElementById("navbar").style.height = "36px";
+    }else{
+        document.getElementById("navbar").style.height = "0";
+    }    
+    toggle = toggle==1?0:1;
+    document.getElementById("menu-btn").setAttribute('toggle',toggle);
+}
