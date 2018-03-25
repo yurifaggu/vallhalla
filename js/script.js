@@ -38,11 +38,15 @@ function showSlides() {
 }
 
 function openNav() {
-    var toggle = document.getElementById("menu-btn").getAttribute('toggle');
+    var toggle = document.getElementById("menu-btn")
+    .getAttribute('toggle');
+    var navbar = document.getElementById("navbar");
     if(toggle == 0){
-        document.getElementById("navbar").style.height = "36px";
+        navbar.style.visibility = "visible";
+        navbar.style.height = "34px";
     }else{
-        document.getElementById("navbar").style.height = "0";
+        navbar.style.visibility = "hidden";
+        navbar.style.height = "0";
     }    
     toggle = toggle==1?0:1;
     document.getElementById("menu-btn").setAttribute('toggle',toggle);

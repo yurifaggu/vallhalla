@@ -159,8 +159,8 @@ Carousel
 .page-turner{
     font-size: 0;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
 }
 
 .dot {
@@ -333,27 +333,8 @@ Responsivensess stuff
         bottom: 0;
         max-width: 480px;
     }
-
     #navbar{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .wrapper {
-        border-top: #f50056 2px solid;
-    }
-    .feature {
-        width: 100%;
-        float: none;
-        border-bottom: 2px solid black;
-    }
-    .carousel-caption {
-        bottom: 0;
-        max-width: 480px;
-    }
-    #navbar{
-        display: none;
+        visibility: hidden;
     }
     header{
         text-align: initial;
@@ -374,8 +355,22 @@ Responsivensess stuff
     }
     #navbar{
         transition: 0.5s;
-        display: block;
         height: 0px;
+    }
+    #menu-items li a{
+        font-size: 9pt;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .sm{
+        display: none !important;
+    }
+    .xs{
+        display: inline-block !important;
+    }
+    #menu-btn{
+        padding-top: 0px;
     }
 }
 
