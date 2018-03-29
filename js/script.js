@@ -37,17 +37,29 @@ function showSlides() {
     setTimeout(showSlides, 7000);
 }
 
-function openNav() {
-    var toggle = document.getElementById("menu-btn")
-    .getAttribute('toggle');
-    var navbar = document.getElementById("navbar");
-    if(toggle == 0){
-        navbar.style.visibility = "visible";
-        navbar.style.height = "34px";
-    }else{
-        navbar.style.visibility = "hidden";
-        navbar.style.height = "0";
-    }    
-    toggle = toggle==1?0:1;
-    document.getElementById("menu-btn").setAttribute('toggle',toggle);
+// function openNav() {
+//     var toggle = document.getElementById("menu-btn")
+//     .getAttribute('toggle');
+//     var navbar = document.getElementById("navbar");
+//     if(toggle == 0){
+//         navbar.style.display = "block";
+//         navbar.style.height = "34px";
+//     }else{
+//         navbar.style.display = "none";
+//         navbar.style.height = "0";
+//     }    
+//     toggle = toggle==1?0:1;
+//     document.getElementById("menu-btn").setAttribute('toggle',toggle);
+// }
+
+function toggleNav() {
+    var nav = document.getElementById("navbar");
+    var btn = document.getElementById("menu-btn");
+    if (nav.className === "") {
+        nav.className += "responsive";
+        btn.innerHTML = "✖";
+    } else {
+        nav.className = "";
+        btn.innerHTML = "&#9776;";
+    }
 }
