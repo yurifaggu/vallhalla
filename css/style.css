@@ -156,8 +156,8 @@ Carousel
 .page-turner{
     font-size: 0;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 35px;
+    right: 35px;
 }
 
 .dot {
@@ -423,6 +423,23 @@ Responsivensess stuff
     }
     #menu-btn{
         padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .minipic{
+        margin: 0;
+        float: none;
+    }
+    .minipic img{
+        width: 100%;
+        height: auto;     
+    }
+    .article-text{
+        padding: 0;
+    }
+    .article-text h3{
+        margin: 0;
     }
 }
 
