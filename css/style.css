@@ -339,15 +339,15 @@ footer #menu-items li a{
 Responsivensess stuff
 -----------------------------------------------------------------------------*/
 
-@media screen and (max-width: 1010px){
+@media screen and (max-width: 1110px){
     .wrapper {
         width: 850px;
     }
     #main-column{
-        width: 540px;
+        width: 100%;
     }
     #side-column{
-        width: 290px;
+        display: none;
     }
 }
 
@@ -360,14 +360,12 @@ Responsivensess stuff
     #main-column{
         width: 100%;
     }
-    #side-column{
-        display: none;
-    }
 }
 
 @media screen and (max-width: 600px){
     .wrapper {
         border-top: #f50056 2px solid;
+        border-radius: 0%;
     }
     .feature {
         width: 100%;
