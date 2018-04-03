@@ -4,7 +4,6 @@ var dots = document.getElementsByClassName("dot");
 
 showSlides();
 
-
 function currentSlide(index) {
     slideIndex = index;
     if (slideIndex > slides.length) {index = 1}
@@ -36,21 +35,6 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 7000);
 }
-
-// function openNav() {
-//     var toggle = document.getElementById("menu-btn")
-//     .getAttribute('toggle');
-//     var navbar = document.getElementById("navbar");
-//     if(toggle == 0){
-//         navbar.style.display = "block";
-//         navbar.style.height = "34px";
-//     }else{
-//         navbar.style.display = "none";
-//         navbar.style.height = "0";
-//     }    
-//     toggle = toggle==1?0:1;
-//     document.getElementById("menu-btn").setAttribute('toggle',toggle);
-// }
 
 function toggleNav() {
     var nav = document.getElementById("navbar");
