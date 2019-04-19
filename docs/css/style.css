@@ -1,0 +1,454 @@
+/*-----------------------------------------------------------------------------
+Globals
+-----------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 10pt;
+    font-family: 'Titillium Web','sans-serif';
+    background: black;
+    color: white;
+    /* background: url('../img/bg.jpg') center center no-repeat; */
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #f50056;
+    font-weight: 400;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style-type: none;
+    font-family: 'Press Start 2P';
+}
+
+li{
+    font-size: 16px;
+    display: inline;
+}
+
+header{
+    height: auto;
+    text-align: center;
+}
+
+p{
+    font-size: 10pt;
+}
+
+i{
+    font-size: 9pt;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}
+
+h3{
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.wrapper{    
+    max-width: 1100px;
+    margin: 0px auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;   
+    background: rgb(38, 38, 38);
+    border-radius: 5px;
+    border-top: #f50056 2px solid;
+    border-bottom: #f50056 2px solid;
+    border-left: #f50056 2px solid;
+    border-right: #f50056 2px solid;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/*-----------------------------------------------------------------------------
+Header
+-----------------------------------------------------------------------------*/
+
+.logo{
+    max-width: 1000px;
+    padding: 8px;
+    margin: 0px auto;
+}
+
+#navbar{
+    background: rgb(41, 41, 41);
+    width: 100%;
+}
+
+#menu{
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+#menu-items li a{
+    display: inline-block;
+    color: #f50056; 
+    padding: 11px 15px;
+    transition: all 0.4s;   
+}
+
+#menu-items li a:hover{  
+    color: rgb(255, 255, 255); 
+    /* background: #f50056; */
+}
+
+/*-----------------------------------------------------------------------------
+Carousel
+-----------------------------------------------------------------------------*/
+
+#carousel{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 328px;
+    position: relative;
+    border-bottom: 2px black solid;
+}
+
+#carousel a {
+    position: absolute;
+    display: block;
+    height: 300px;
+}
+
+.slide {
+    transition: visibility 1.2s, opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 328px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.carousel-caption {
+    padding: 10px;
+    bottom: 10%;
+    position: absolute;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    max-width: 525px;
+}
+
+.carousel-caption a {
+    position: relative !important;
+    font-size: 18pt;
+    font-weight: 700;
+    height: auto !important;
+}
+
+.page-turner{
+    font-size: 0;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #ee729db4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+    background-color: #f50056;
+}
+
+/*-----------------------------------------------------------------------------
+Features
+-----------------------------------------------------------------------------*/
+
+.feature{
+    background-position: center center;
+    background-size: cover;
+    height: 198px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.feature a{
+    display: block;
+    height: 198px;
+}
+
+.feature.one{
+    border-right: 2px black solid;
+}
+
+.feature-caption {
+    padding: 10px;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.feature-caption a {
+    font-size: 15pt;
+    font-weight: 700;
+    display: block;
+    max-width: 85%;
+    height: auto !important;
+}
+
+/*-----------------------------------------------------------------------------
+Main column
+-----------------------------------------------------------------------------*/
+
+#columns{
+    clear: both;
+}
+
+#main-column{
+    float: left;
+    padding: 0px 15px 15px 15px;
+    width: 805px;
+}
+
+#article-list{
+    padding-bottom: 10px;
+}
+
+article{
+    min-height: 110px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #dedede44;
+    padding-top: 5px;
+}
+
+.article-text{
+    padding-left: 213px;
+}
+
+#columns h2{
+    border-bottom: 3px #f50056 solid;
+    margin-bottom: 0;
+    clear: both;
+}
+
+article h3{
+    letter-spacing: -0.03em;
+    font-size: 170%;
+    color: #f50056;
+    font-family: 'Titillium Web','sans-serif';
+    font-weight: 600;
+}
+
+article p{
+    font-size: 11pt;
+}
+
+.minipic{
+    padding-top: 7px;
+    float: left;
+    margin-right: 10px;
+}
+
+.minipic img{
+    height: 130px;
+    width: 190px;
+}
+
+
+/*-----------------------------------------------------------------------------
+Side column
+-----------------------------------------------------------------------------*/
+
+#side-column{
+    float: left;
+    width: 280px;
+}
+
+#newsletter{
+    background: rgb(31, 31, 31);
+    padding: 15px;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 8px;
+}
+
+input[type=submit] {
+    background-color: #bb2057;
+    color: white;
+    border: none;
+}
+
+/*-----------------------------------------------------------------------------
+Footer
+-----------------------------------------------------------------------------*/
+
+footer {
+    width:100%;
+    padding: 25px 0 15px 0;
+    background:rgb(16, 16, 16);
+    color:rgb(172, 172, 172);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-align: center;
+    /* border-top: gray 2px solid; */
+}
+
+footer #menu{
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+footer #menu-items li a{
+    font-size: 12pt;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    color: rgb(242, 49, 100); 
+    padding: 0 10px 0 10px;
+    transition: all 0.4s;   
+}
+
+/*-----------------------------------------------------------------------------
+Responsivensess stuff
+-----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1110px){
+    .wrapper {
+        width: 850px;
+    }
+    #main-column{
+        width: 100%;
+    }
+    #side-column{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    #main-column{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper {
+        border-top: #f50056 2px solid;
+        border-radius: 0%;
+    }
+    .feature {
+        width: 100%;
+        float: none;
+        border-bottom: 2px solid black;
+    }
+    .carousel-caption {
+        bottom: 0;
+        max-width: 480px;
+    }
+    header{
+        text-align: initial;
+    }
+    .lr{
+        display: none;
+    }
+    .sm{
+        display: inline-block !important;
+    }
+    #navbar{
+        visibility: hidden;
+        height: 0;
+        transition: 0.5s;
+    }
+    #menu-btn{
+        font-size: 30px;
+        cursor: pointer;
+        float: right;
+        padding-right: 9px;
+        padding-top: 5px;
+        display: block !important;
+    }
+    .responsive{
+        visibility: visible !important;
+        height: 36px !important;
+
+    }
+    #menu-items li a{
+        font-size: 9pt;
+        padding: 11px 10px; 
+    }
+    footer{
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .sm{
+        display: none !important;
+    }
+    .xs{
+        display: inline-block !important;
+    }
+    #menu-btn{
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .minipic{
+        margin: 0;
+        float: none;
+    }
+    .minipic img{
+        width: 100%;
+        height: auto;     
+    }
+    .article-text{
+        padding: 0;
+    }
+    .article-text h3{
+        margin: 0;
+    }
+}
+
+@media (hover: none){
+    .dot:hover {
+        background-color: #ee729db4;
+    }
+    .active{
+        background-color: #f50056 !important;
+    }
+}
+
+
+

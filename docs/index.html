@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Titillium+Web" rel="stylesheet">
+    <link rel="icon" href="https://img.itch.zone/aW1hZ2UvNDEzNS8yODc5OTYuZ2lm/32x32%23m/zRrdj0.gif" type="image/gif"/>
+    <title>VA-11 HALL-A</title>
+</head>
+<body>
+
+    <header> 
+        <div class="logo">
+            <a href="#">
+                <img class="lr" src="img/lr-logo.png">
+                <img class="sm" src="img/sm-logo.png" style="display:none">
+                <img class="xs" src="img/xs-logo.png" style="display:none">
+                <span id="menu-btn" style="display:none" onclick="toggleNav()">&#9776;</span>
+            </a>
+        </div>
+        
+        <nav id="navbar">
+            <div id="menu">
+                <ul id="menu-items">
+                    <li><a href="#">>home</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </div>          
+        </nav>
+    </header>
+    
+    <main id="content">
+        <div class="wrapper">
+            <section id="carousel">
+                <div class="slide">
+                    <a href="#"><img src="img/sample.jpg"></a>
+                    <div class="carousel-caption">
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        <p>Aspernatur vitae consequatur ipsa ipsam earum sunt dolore magnam, tempora iste nostrum exercitationem nisi quia veniam perspiciatis quis, suscipit labore quas voluptas!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <a href="https://google.com"><img src="https://i.imgur.com/10B9ixT.jpg"></a>
+                    <div class="carousel-caption">
+                        <a href="https://google.com">Praesent arcu enim, tincidunt at malesuada vitae.</a>
+                        <p>Vivamus aliquet ex a nulla bibendum convallis. Suspendisse rutrum nunc urna, nec volutpat diam consequat feugiat. Fusce eget lorem vestibulum, consequat felis at, ullamcorper ex.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <a href="https://youtube.com"><img src="img/cy.jpg"></a>
+                    <div class="carousel-caption">
+                        <a href="https://youtube.com">Quisque bibendum, nisl ut aliquet pretium, lectus libero faucibus magna.</a>
+                        <p>Integer consequat erat tincidunt metus feugiat scelerisque. Aenean vitae magna nibh. Phasellus luctus at odio sit amet tristique. Cras sit amet purus ipsum.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="https://video-images.vice.com/articles/59dd02819c0143302b9a7d7a/lede/1507657247092-blade_runner.jpeg?crop=1xw%3A0.9561xh%3B0xw%2C0xh&resize=1250%3A*"></a>
+                    <div class="carousel-caption">
+                        <a href="#">Mauris fermentum tempus euismod.</a>
+                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque at vehicula ex. Proin mi orci, faucibus vel varius at, mollis quis purus. Phasellus et ultrices lectus.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="http://install-game.com/wp-content/uploads/2017/10/Cyberpunk-2077.jpg"></a>
+                    <div class="carousel-caption">
+                        <a href="#">Donec vitae dui et mauris imperdiet porta.</a>
+                        <p>Pellentesque nec eros ipsum. Phasellus sapien est, condimentum eu justo ut, tristique faucibus purus. In at pretium urna. Proin sit amet fermentum neque, ut imperdiet justo.</p>
+                    </div>
+                </div>
+                
+                <div class="page-turner">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                </div>
+
+            </section>
+            
+            <section class="feature one" style="background-image: url(http://78.media.tumblr.com/9a151fe62fbd83eb5ac6bb36f0c66495/tumblr_obutksnSGc1unlm3do1_1280.jpg);">
+                <a href="#"></a>
+                <div class="feature-caption">
+                    <a href="#">Aspernatur vitae consequatur.</a>
+                </div>
+            </section> 
+            <section class="feature two" style="background-image: url(http://i0.kym-cdn.com/photos/images/newsfeed/001/118/839/73e.gif);">
+                <a href="#"></a>
+                <div class="feature-caption">
+                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                </div>
+            </section>
+            
+            <section id="columns">
+                <div id="main-column">
+                    <h2>Latest updates</h2>
+                    <div id="article-list">
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="img/sample.jpg"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p>The Humble Indie Bundle 19 is another one of those deals where if you don't happen to own most of the games already, you're going to make out like a bandit. It has Keep Talking and Nobody Explodes and Superhot (aka Keep Dodging and Everybod...</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>        
+                            </div>                                 
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://i.redd.it/ve1zqzizcvpz.png"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Nunc blandit ut ligula eu semper. Nulla imperdiet.</h3>
+                                <p>Donec et sollicitudin leo. Integer molestie tristique viverra. Praesent non nibh vestibulum, sodales dui vitae, ullamcorper magna. Maecenas quam ipsum, consequat sed commodo vel, pulvinar ac nisl. Nunc blandit ut ligula eu semper. Nulla imperdiet.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://i.redd.it/x7bfeo0rp5401.jpg"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Suspendisse posuere, nisl vel finibus congue.</h3>
+                                <p>Maecenas tristique sem non metus pulvinar, at tincidunt eros fermentum. Mauris arcu dui, ultricies a luctus et, consequat ac felis. Suspendisse posuere, nisl vel finibus congue, nisl sapien lacinia ex, ac tempus lorem massa in.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://static.tumblr.com/5ee6dfe67f0b245ee5ca3445f97be960/huldjt0/3vOoxs6gf/tumblr_static_tumblr_static_3uvfn8d7h3wggg0g8scggc48k_640.gif"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Interdum et malesuada fames.</h3>
+                                <p>Vivamus dictum est non condimentum sollicitudin. Morbi pharetra ultricies enim, nec laoreet justo pulvinar in. Nam bibendum est quis luctus ultricies. Sed et neque vel ex faucibus luctus et metus. Interdum et malesuada fames.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://66.media.tumblr.com/80518eee3bd13f25116cfd42d202b253/tumblr_nzl3ksZz0e1s9qtqoo1_r1_400.gif"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Anteger porta a ipsum in volutpat. Proin rhoncus.</h3>
+                                <p>Cras at neque nec libero lacinia tristique id vitae felis. Maecenas laoreet nibh egestas, scelerisque diam, interdum libero. Integer porta a ipsum in volutpat. Proin rhoncus.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://creators-images.vice.com/content-images/contentimage/no-slug/071c889ccd926283f3c9946b1468f1b2.jpg"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Orci varius natoque penatibus et magnis dis parturient montest.</h3>
+                                <p>In hac habitasse platea dictumst. Pellentesque ipsum ante, imperdiet vitae auctor vel, egestas et metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur mus. Nam convallis tortor sed tempor consequat. Integer feugiat.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://creators-images.vice.com/content-images/contentimage/no-slug/53888652191fac38f1c7ec32bfc45051.jpg"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Duis elementum eleifend diam, ac lobortis lorem tincidunt ac</h3>
+                                <p>Nam ullamcorper augue sollicitudin nisi scelerisque, eget ultricies erat egestas. Integer at nibh et leo rhoncus malesuada quis at urna. Duis elementum eleifend diam, ac lobortis lorem ac. Sed vestibulum aliquam ante, sit amet.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://steemitimages.com/0x0/http://67.media.tumblr.com/20c1caa8470cbfb9770c1e913d3b1924/tumblr_o9p8xoJ9vm1uxzaugo1_500.gif"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Etiam tincidunt turpis leo, et scelerisque felis aliquam non.</h3>
+                                <p>Nulla suscipit velit ut vestibulum lobortis. Suspendisse potenti. Donec sollicitudin, mi non mollis facilisis, eros ex condimentum diam, et consequat purus felis consectetur quam. Etiam turpis leo, et scelerisque felis aliquam non. Sed eget.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://pbs.twimg.com/media/CcybTxxUkAAzuBE.jpg"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Donec nec luctus diam.</h3>
+                                <p>Cras id consectetur massa. Duis vel pharetra augue. Suspendisse nec felis sem. Donec nec luctus diam. Maecenas finibus nunc et lectus placerat, in bibendum dolor vestibulum. Vestibulum in non turpis porta placerat vel quis.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="minipic">
+                                <a href="#"><img src="https://orig00.deviantart.net/82ca/f/2017/215/c/7/cables__gif__by_weilard-dbip952.gif"></a>
+                            </div>
+                            <div class="article-text">
+                                <h3>Festibulum faucibus tellus quis diam varius, non tempor libero dapibus.</h3>
+                                <p>Vestibulum faucibus tellus quis diam varius, non tempor libero dapibus. Phasellus eu faucibus dui. Nunc facilisis euismod augue sed sodales. Nullam sollicitudin metus ac quam vehicula pretium. Nunc hendrerit lobortis nisl, non bibendum felis ullamcorper.</p>
+                                <i>by Elizabeth Henges, March 14, 2018</i>
+                            </div>
+                        </article>                        
+                    </div>
+
+                    <a href="#" style="background:#bb2057; color:white; padding:10px 20px; float: right;">Next page</a>
+
+                </div>
+                <div id="side-column"> 
+                    <form>
+                          <h2>Newsletter</h2>
+                        <div id="newsletter">
+                            <input type="text" placeholder="Name" name="name" required>
+                            <input type="text" placeholder="Email address" name="mail" required>
+                            <input type="submit" value="Subscribe">                       
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="clearfix"></div>     
+
+        </div>   
+    </main>  
+
+    <footer>
+        <div id="menu">
+            <ul id="menu-items">
+                <li><a href="#">home</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div> 
+        <p>A Useless Endeavor Media website. Powered by my fucking Soul.<br>
+            Copyright &copy; 2018 VA-11 HALL-A Bar. No rights reserved.</p>       
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
